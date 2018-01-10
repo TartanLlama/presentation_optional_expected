@@ -1,4 +1,4 @@
-# Functional expceptionless error hndling with optional and expected
+## Functional expceptionless error hndling with optional and expected
 
 ### Simon Brand, Senior Software Engineer, Codeplay Software Ltd.
 
