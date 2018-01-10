@@ -37,7 +37,7 @@ image get_cute_cat (const image& img) {
 ## `std::optional`
 
 ```cpp
-image get_cute_cat (const image& img) {
+std::optional<image> get_cute_cat (const image& img) {
     auto cropped = find_cat(img);
     if (!cropped) {
       return std::nullopt;
