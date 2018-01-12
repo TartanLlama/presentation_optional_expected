@@ -156,10 +156,10 @@ opt_i.map(add_12)
 ---
 
 
-# Monad
+## Monad
 
-- A context.
-- An operation to compose operations which return values wrapped in the context.
+- A context. |
+- An operation to compose operations which return values wrapped in the context. |
 
 ---
 
