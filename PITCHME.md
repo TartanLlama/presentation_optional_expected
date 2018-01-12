@@ -20,6 +20,8 @@
 
 ---
 
+## The £1,000,000 function
+
 ```cpp
 image get_cute_cat (const image& img);
 ```
@@ -130,15 +132,19 @@ image get_cute_cat (const image& img) {
 
 ---
 
+## `map`
+
 ```cpp
 template <class T>
 struct optional {
     template <class U>
-    optional<U> map (std::function<U(T)>;
+    optional<U> map (std::function<U(T)>);
 };
 ```
 
 ---
+
+## Example
 
 ```cpp
 tl::optional<int> opt_i = maybe_get_int();
@@ -157,6 +163,8 @@ opt_i.map(add_12)
 
 ---
 
+## `and_then`
+
 ```cpp
 template <class T>
 struct optional {
@@ -166,6 +174,8 @@ struct optional {
 ```
 
 ---
+
+## Example
 
 ```cpp
 tl::optional<int> opt_i = maybe_get_int();
