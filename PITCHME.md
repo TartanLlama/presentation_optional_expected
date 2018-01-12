@@ -1,4 +1,4 @@
-### Functional expceptionless error hndling with optional and expected
+### Functional exceptionless error handling with optional and expected
 
 #### Simon Brand, Senior Software Engineer, Codeplay Software Ltd.
 
@@ -7,6 +7,12 @@
 ---
 
 ## Agenda
+
+- Exceptions
+- `std::optional`
+- `std::expected`
+- Functional extensions
+- Functional theory
 
 ---
 
@@ -98,6 +104,21 @@ tl::optional<image> get_cute_cat (const image& img) {
 
 ---
 
+## Original code
+
+```cpp
+image get_cute_cat (const image& img) {
+    return add_rainbow(
+             make_smaller(
+               make_eyes_sparkle(
+                 add_bow_tie(
+                   crop_to_cat(img))));
+}
+```
+
+---
+
+
 # The theory
 
 ---
@@ -140,7 +161,7 @@ opt_i.map(add_12)
 template <class T>
 struct optional {
     template <class U>
-    optional<U> and_then (std::function<optional<U>(T)>;
+    optional<U> and_then (std::function<optional<U>(T)>);
 };
 ```
 
@@ -159,6 +180,12 @@ opt_i.and_then(try_sqrt)
 
 ---
 
-# ?
+## Resources
+
+- https://github.com/TartanLlama/optional
+- https://github.com/TartanLlama/expected
+- https://wg21.tartanllama.xyz/monadic-optional/
+- https://blog.tartanllama.xyz/optional-expected/
+- http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
 
 ---
