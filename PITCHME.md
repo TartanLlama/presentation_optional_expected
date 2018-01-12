@@ -127,8 +127,8 @@ image get_cute_cat (const image& img) {
 
 # Functor
 
-- A context.
-- An operation to unwrap stored values, manipulate them, and wrap the result back in the context.
+- A context. |
+- An operation to unwrap stored values, manipulate them, and wrap the result back in the context. |
 
 ---
 
@@ -156,7 +156,7 @@ opt_i.map(add_12)
 ---
 
 
-## Monad
+# Monad
 
 - A context. |
 - An operation to compose operations which return values wrapped in the context. |
